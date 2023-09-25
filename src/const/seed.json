@@ -1,0 +1,2572 @@
+[
+  {
+    "vendor": [
+      {
+        "id": "18482dd4-c1da-478a-9ef3-0ae2b284626b",
+        "name": "ABC Electronics",
+        "address": "123 Main Street",
+        "phone": "123-456-7890",
+        "email": "info@abcelectronics.com",
+        "created_at": "2023-09-24T21:18:44.892Z",
+        "updated_at": "2023-09-25T12:50:36.152Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b456cf93-37e4-4346-994d-7a1412b38360",
+        "name": "XYZ Furniture",
+        "address": "456 Elm Street",
+        "phone": "987-654-3210",
+        "email": "sales@xyzfurniture.com",
+        "created_at": "2023-09-25T03:23:10.191Z",
+        "updated_at": "2023-09-24T23:14:02.702Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "061a0f20-d74c-489b-a722-4ea694c6e3b7",
+        "name": "123 Supermarket",
+        "address": "789 Oak Street",
+        "phone": "555-123-4567",
+        "email": "contact@123supermarket.com",
+        "created_at": "2023-09-24T21:11:29.367Z",
+        "updated_at": "2023-09-25T04:18:53.335Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "8a9be358-7ced-4b22-9a8f-7242b31b2fbb",
+        "name": "Best Buy",
+        "address": "321 Maple Street",
+        "phone": "888-999-0000",
+        "email": "support@bestbuy.com",
+        "created_at": "2023-09-25T06:50:53.147Z",
+        "updated_at": "2023-09-25T12:14:46.542Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "056dd246-d5b2-4730-af0b-427d60fe492d",
+        "name": "Fashion World",
+        "address": "555 Pine Street",
+        "phone": "111-222-3333",
+        "email": "info@fashionworld.com",
+        "created_at": "2023-09-25T04:39:43.179Z",
+        "updated_at": "2023-09-24T16:22:49.276Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "customer": [
+      {
+        "id": "5d705c6c-cd2c-4d3e-b29b-6fecc106e478",
+        "name": "John Doe",
+        "address": "123 Main Street",
+        "phone": "123-456-7890",
+        "email": "john.doe@example.com",
+        "created_at": "2023-09-24T17:21:02.014Z",
+        "updated_at": "2023-09-24T15:48:56.910Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c1090061-69c1-422d-ab4c-7693848b6bc2",
+        "name": "Jane Smith",
+        "address": "456 Elm Street",
+        "phone": "987-654-3210",
+        "email": "jane.smith@example.com",
+        "created_at": "2023-09-24T21:43:21.636Z",
+        "updated_at": "2023-09-25T07:55:05.210Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "cd5968bd-cd41-48df-8609-4cc814ca0a2f",
+        "name": "Michael Brown",
+        "address": "789 Oak Street",
+        "phone": "555-123-4567",
+        "email": "michael.brown@example.com",
+        "created_at": "2023-09-24T23:22:31.562Z",
+        "updated_at": "2023-09-24T22:01:30.504Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b8797e10-9ee1-4587-9c29-249ee8c36617",
+        "name": "Sarah Jones",
+        "address": "321 Maple Street",
+        "phone": "888-999-0000",
+        "email": "sarah.jones@example.com",
+        "created_at": "2023-09-24T19:43:55.416Z",
+        "updated_at": "2023-09-25T00:54:33.742Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5db640bd-0007-4f7f-b677-8cad9b81b1f3",
+        "name": "Robert Wilson",
+        "address": "555 Pine Street",
+        "phone": "111-222-3333",
+        "email": "robert.wilson@example.com",
+        "created_at": "2023-09-25T07:00:29.115Z",
+        "updated_at": "2023-09-25T10:45:28.161Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "payment": [
+      {
+        "id": "41cdcda2-4886-40f3-bbb4-ddc9b2d2f9d5",
+        "amount": 11189,
+        "payment_date": "2023-09-25T13:50:02.282Z",
+        "payment_status": "Paid",
+        "created_at": "2023-09-25T14:58:27.326Z",
+        "updated_at": "2023-09-25T09:03:58.819Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "c1090061-69c1-422d-ab4c-7693848b6bc2"
+      },
+      {
+        "id": "ea6132ff-2bed-4522-be9f-94ce809256fa",
+        "amount": 70260,
+        "payment_date": "2023-09-25T04:14:12.626Z",
+        "payment_status": "Pending",
+        "created_at": "2023-09-25T01:56:47.166Z",
+        "updated_at": "2023-09-25T11:02:07.947Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "c1090061-69c1-422d-ab4c-7693848b6bc2"
+      },
+      {
+        "id": "f850ae3d-6513-4f69-8349-52519701ab7a",
+        "amount": 21434,
+        "payment_date": "2023-09-25T13:33:40.600Z",
+        "payment_status": "Cancelled",
+        "created_at": "2023-09-24T19:34:41.961Z",
+        "updated_at": "2023-09-25T02:40:19.818Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "5db640bd-0007-4f7f-b677-8cad9b81b1f3"
+      },
+      {
+        "id": "49c80074-237d-463e-9523-39e62bc0d1ee",
+        "amount": 26974,
+        "payment_date": "2023-09-25T04:13:45.684Z",
+        "payment_status": "Refunded",
+        "created_at": "2023-09-25T02:57:14.407Z",
+        "updated_at": "2023-09-25T12:15:54.240Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "cd5968bd-cd41-48df-8609-4cc814ca0a2f"
+      },
+      {
+        "id": "e7f87d27-fbc3-401e-af9c-c7cabea1275c",
+        "amount": 72589,
+        "payment_date": "2023-09-24T22:03:47.861Z",
+        "payment_status": "Processing",
+        "created_at": "2023-09-25T00:15:00.819Z",
+        "updated_at": "2023-09-25T13:40:08.883Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "b8797e10-9ee1-4587-9c29-249ee8c36617"
+      }
+    ],
+    "finance": [
+      {
+        "id": "4cec3f44-3466-4ba5-a7bd-8d46ecd83c25",
+        "budget": 20792,
+        "expense": 56172,
+        "income": 62475,
+        "profit": 97664,
+        "created_at": "2023-09-25T11:17:35.210Z",
+        "updated_at": "2023-09-24T15:26:57.711Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "dec32acb-a0d6-4731-a058-0baca2a5ce2d",
+        "budget": 53966,
+        "expense": 46643,
+        "income": 94996,
+        "profit": 36504,
+        "created_at": "2023-09-25T08:50:35.700Z",
+        "updated_at": "2023-09-24T17:19:10.701Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "f5a3b9e6-ca80-4d93-87db-c9949047908d",
+        "budget": 3755,
+        "expense": 69046,
+        "income": 24601,
+        "profit": 69739,
+        "created_at": "2023-09-25T04:48:18.387Z",
+        "updated_at": "2023-09-24T23:35:46.581Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "1fffbd82-3edc-43d8-973f-78207b93fd62",
+        "budget": 58997,
+        "expense": 34938,
+        "income": 43303,
+        "profit": 68053,
+        "created_at": "2023-09-24T15:52:29.059Z",
+        "updated_at": "2023-09-24T16:48:34.424Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "991c51df-b4e7-4e91-8645-b1fb600f30a5",
+        "budget": 51252,
+        "expense": 72109,
+        "income": 12505,
+        "profit": 63652,
+        "created_at": "2023-09-24T23:22:35.035Z",
+        "updated_at": "2023-09-24T18:53:26.479Z",
+        "business_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "b69a89cb-c31f-413a-8acf-d4ac43a7de29",
+        "email": "Zoey99@roq.tech",
+        "firstName": "June",
+        "lastName": "Reynolds",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/75222908",
+        "tenantId": null
+      },
+      {
+        "reference": "921e92d2-1f25-4ee3-957b-6011522a95f1",
+        "email": "Adrain.Hansen@roq.tech",
+        "firstName": "Enos",
+        "lastName": "Ruecker-Robel",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/61345557",
+        "tenantId": null
+      },
+      {
+        "reference": "5de63bd2-db15-4e6b-aaea-1d3f2b841bf2",
+        "email": "Joey_McKenzie16@roq.tech",
+        "firstName": "Laurel",
+        "lastName": "Marquardt",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/34760712",
+        "tenantId": null
+      },
+      {
+        "reference": "03f908a8-dc4c-49b7-b58e-08d19d8f22cf",
+        "email": "Murray54@roq.tech",
+        "firstName": "Zoey",
+        "lastName": "Raynor",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/268291",
+        "tenantId": null
+      },
+      {
+        "reference": "cc0447a5-c2ef-4716-9836-7b2618e92274",
+        "email": "Thomas77@roq.tech",
+        "firstName": "Herbert",
+        "lastName": "Trantow",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/214.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "vendor": [
+      {
+        "id": "1d560f18-610d-42e9-8158-77e43cd2633b",
+        "name": "ABC Company",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "info@abccompany.com",
+        "created_at": "2023-09-25T05:07:58.226Z",
+        "updated_at": "2023-09-24T22:17:48.726Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "401b1e3d-e41c-468f-9455-689e849ed909",
+        "name": "XYZ Corporation",
+        "address": "456 Elm St",
+        "phone": "555-555-5555",
+        "email": "sales@xyzcorp.com",
+        "created_at": "2023-09-24T17:58:37.862Z",
+        "updated_at": "2023-09-25T09:32:17.991Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "08e53ea4-af82-4024-94ff-29ba389fd42a",
+        "name": "123 Industries",
+        "address": "789 Oak Ave",
+        "phone": "999-999-9999",
+        "email": "support@123industries.com",
+        "created_at": "2023-09-25T04:53:34.524Z",
+        "updated_at": "2023-09-25T02:17:31.478Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "925efdb9-6d9b-456b-bc50-7ff4a580c25f",
+        "name": "Best Products Ltd",
+        "address": "321 Maple Dr",
+        "phone": "888-888-8888",
+        "email": "contact@bestproducts.com",
+        "created_at": "2023-09-24T22:59:00.375Z",
+        "updated_at": "2023-09-25T01:15:38.872Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "1538891d-76b1-4c06-84ad-a030763839e6",
+        "name": "Global Solutions",
+        "address": "987 Pine Ln",
+        "phone": "777-777-7777",
+        "email": "info@globalsolutions.com",
+        "created_at": "2023-09-25T09:39:32.010Z",
+        "updated_at": "2023-09-24T15:52:35.647Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "customer": [
+      {
+        "id": "4a0813b4-3f85-40a8-978c-4b96202c8cbf",
+        "name": "John Doe",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "john.doe@example.com",
+        "created_at": "2023-09-24T20:55:31.589Z",
+        "updated_at": "2023-09-25T08:10:14.388Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "4c8ae233-10e4-4f4d-ac54-054a3992e1dc",
+        "name": "Jane Smith",
+        "address": "456 Elm St",
+        "phone": "555-555-5555",
+        "email": "jane.smith@example.com",
+        "created_at": "2023-09-25T03:35:28.263Z",
+        "updated_at": "2023-09-25T01:21:10.591Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "ffbd9a02-5781-4f22-a62f-9a94acd400ec",
+        "name": "Michael Brown",
+        "address": "789 Oak Ave",
+        "phone": "999-999-9999",
+        "email": "michael.brown@example.com",
+        "created_at": "2023-09-25T03:11:30.595Z",
+        "updated_at": "2023-09-25T07:15:00.062Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "7c388f47-e0aa-44e1-89b1-9eedc0abcf1e",
+        "name": "Sarah Jones",
+        "address": "321 Maple Dr",
+        "phone": "888-888-8888",
+        "email": "sarah.jones@example.com",
+        "created_at": "2023-09-24T19:13:49.184Z",
+        "updated_at": "2023-09-24T18:06:02.641Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "42f7e14c-96e1-4df4-aa91-7690215f8029",
+        "name": "David Wilson",
+        "address": "987 Pine Ln",
+        "phone": "777-777-7777",
+        "email": "david.wilson@example.com",
+        "created_at": "2023-09-24T22:54:10.666Z",
+        "updated_at": "2023-09-25T12:00:39.218Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "payment": [
+      {
+        "id": "55650377-8e7c-48ae-b02a-30d09cdc4c20",
+        "amount": 33116,
+        "payment_date": "2023-09-24T17:12:02.787Z",
+        "payment_status": "Paid",
+        "created_at": "2023-09-25T05:21:31.024Z",
+        "updated_at": "2023-09-25T12:01:33.831Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "4c8ae233-10e4-4f4d-ac54-054a3992e1dc"
+      },
+      {
+        "id": "d4c0dec6-c9ef-4b77-b0ce-a02eed7fb659",
+        "amount": 83196,
+        "payment_date": "2023-09-25T08:51:53.124Z",
+        "payment_status": "Pending",
+        "created_at": "2023-09-25T05:45:26.645Z",
+        "updated_at": "2023-09-25T08:28:48.752Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "42f7e14c-96e1-4df4-aa91-7690215f8029"
+      },
+      {
+        "id": "966513e1-adf3-4c42-a796-8dc1a116b4d0",
+        "amount": 70423,
+        "payment_date": "2023-09-24T19:18:31.610Z",
+        "payment_status": "Cancelled",
+        "created_at": "2023-09-25T00:38:16.227Z",
+        "updated_at": "2023-09-25T11:33:04.064Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "4a0813b4-3f85-40a8-978c-4b96202c8cbf"
+      },
+      {
+        "id": "51570bf6-c3b7-4068-829f-67f1db2c14bc",
+        "amount": 23725,
+        "payment_date": "2023-09-24T22:37:13.379Z",
+        "payment_status": "Refunded",
+        "created_at": "2023-09-25T07:53:44.311Z",
+        "updated_at": "2023-09-25T07:44:13.953Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "4a0813b4-3f85-40a8-978c-4b96202c8cbf"
+      },
+      {
+        "id": "69897035-509f-4272-ad74-4c65582094d2",
+        "amount": 12964,
+        "payment_date": "2023-09-25T01:51:19.746Z",
+        "payment_status": "Processing",
+        "created_at": "2023-09-25T03:53:27.518Z",
+        "updated_at": "2023-09-25T07:20:48.758Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "7c388f47-e0aa-44e1-89b1-9eedc0abcf1e"
+      }
+    ],
+    "finance": [
+      {
+        "id": "010b9534-e38a-4a2c-b1c1-b4cd7526c8ad",
+        "budget": 34084,
+        "expense": 25154,
+        "income": 90854,
+        "profit": 34753,
+        "created_at": "2023-09-24T23:07:35.730Z",
+        "updated_at": "2023-09-24T17:59:42.420Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "2f83e81d-e451-4dd1-bcc8-49851ea878a2",
+        "budget": 82879,
+        "expense": 28650,
+        "income": 90365,
+        "profit": 53755,
+        "created_at": "2023-09-25T05:56:31.206Z",
+        "updated_at": "2023-09-25T00:23:39.175Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "e3e34811-5c84-4d02-8bcd-ca197704f3e4",
+        "budget": 9492,
+        "expense": 6002,
+        "income": 61939,
+        "profit": 77641,
+        "created_at": "2023-09-24T23:24:40.001Z",
+        "updated_at": "2023-09-25T13:10:32.752Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "8a6c88d1-9441-4727-bd2e-41976899c90c",
+        "budget": 98554,
+        "expense": 98134,
+        "income": 11574,
+        "profit": 98502,
+        "created_at": "2023-09-25T10:01:43.830Z",
+        "updated_at": "2023-09-25T02:02:14.989Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "a5585b50-d799-4a94-9623-34e68cc37a50",
+        "budget": 25605,
+        "expense": 85278,
+        "income": 54956,
+        "profit": 43642,
+        "created_at": "2023-09-25T03:17:51.915Z",
+        "updated_at": "2023-09-24T16:52:08.400Z",
+        "business_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "7d740de7-c9e9-406a-b4c7-c6cfa185cee5",
+        "email": "Reggie_Pfannerstill41@roq.tech",
+        "firstName": "Lane",
+        "lastName": "Rath",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/90033764",
+        "tenantId": null
+      },
+      {
+        "reference": "cf220b34-d6b3-44e1-9fdf-8cb8453fb606",
+        "email": "Vickie88@roq.tech",
+        "firstName": "Presley",
+        "lastName": "Pollich",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/811.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "2c21f080-a380-401a-86d5-8e5469629bb7",
+        "email": "Gail_Rau@roq.tech",
+        "firstName": "Bernadette",
+        "lastName": "Bailey",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/62604046",
+        "tenantId": null
+      },
+      {
+        "reference": "f4fb5da1-25f7-42eb-a5b0-4967d976b7f3",
+        "email": "Marisa.Dach@roq.tech",
+        "firstName": "Angelita",
+        "lastName": "Smitham",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/33002742",
+        "tenantId": null
+      },
+      {
+        "reference": "b8bf69cb-9125-488f-82e1-d28c2566a1e9",
+        "email": "Cali.Sipes@roq.tech",
+        "firstName": "Ima",
+        "lastName": "Hintz",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/98754394",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "vendor": [
+      {
+        "id": "049d1864-c446-42e0-8e6f-068a75b3eeda",
+        "name": "ABC Company",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "vendor1@example.com",
+        "created_at": "2023-09-25T14:03:10.047Z",
+        "updated_at": "2023-09-25T13:55:09.708Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "84406b98-77ed-437b-a47f-934812d825fd",
+        "name": "XYZ Corporation",
+        "address": "456 Elm St",
+        "phone": "987-654-3210",
+        "email": "vendor2@example.com",
+        "created_at": "2023-09-24T17:19:58.542Z",
+        "updated_at": "2023-09-25T12:38:27.482Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b62c05b1-928f-4d81-bea8-631180a8c611",
+        "name": "123 Enterprises",
+        "address": "789 Oak Ave",
+        "phone": "555-123-4567",
+        "email": "vendor3@example.com",
+        "created_at": "2023-09-25T02:13:12.318Z",
+        "updated_at": "2023-09-24T22:43:01.907Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "81e76d7b-a280-432c-95e1-e22428cf3195",
+        "name": "Best Products Ltd",
+        "address": "321 Pine Rd",
+        "phone": "888-999-0000",
+        "email": "vendor4@example.com",
+        "created_at": "2023-09-24T20:37:37.443Z",
+        "updated_at": "2023-09-25T01:46:55.853Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f63a273a-e0b5-4f15-bf8e-cf74f4583af5",
+        "name": "Global Solutions",
+        "address": "654 Maple Ln",
+        "phone": "444-555-6666",
+        "email": "vendor5@example.com",
+        "created_at": "2023-09-24T18:16:33.981Z",
+        "updated_at": "2023-09-25T10:00:57.237Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "customer": [
+      {
+        "id": "524d485a-d563-4015-a895-03582e3e9f3d",
+        "name": "John Doe",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "customer1@example.com",
+        "created_at": "2023-09-24T20:17:24.354Z",
+        "updated_at": "2023-09-24T18:05:52.324Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "bc7f7aa9-ddf4-4168-96aa-3da8a8876e6b",
+        "name": "Jane Smith",
+        "address": "456 Elm St",
+        "phone": "987-654-3210",
+        "email": "customer2@example.com",
+        "created_at": "2023-09-25T01:07:15.869Z",
+        "updated_at": "2023-09-24T18:31:40.863Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "14040a20-6f66-416b-a7c7-0d7c49f6c923",
+        "name": "Michael Brown",
+        "address": "789 Oak Ave",
+        "phone": "555-123-4567",
+        "email": "customer3@example.com",
+        "created_at": "2023-09-24T23:13:26.935Z",
+        "updated_at": "2023-09-24T22:17:09.396Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c8634084-c5a4-4e44-a362-c9734f09ce82",
+        "name": "Sarah Jones",
+        "address": "321 Pine Rd",
+        "phone": "888-999-0000",
+        "email": "customer4@example.com",
+        "created_at": "2023-09-24T16:02:57.215Z",
+        "updated_at": "2023-09-25T04:16:45.426Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5e32419f-ff2f-415c-94db-e6eb26ea2f6f",
+        "name": "Robert Wilson",
+        "address": "654 Maple Ln",
+        "phone": "444-555-6666",
+        "email": "customer5@example.com",
+        "created_at": "2023-09-24T21:58:06.303Z",
+        "updated_at": "2023-09-25T08:47:29.159Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "payment": [
+      {
+        "id": "894c3613-af12-4982-9c37-bc6a5a1ac773",
+        "amount": 78050,
+        "payment_date": "2023-09-25T03:22:48.844Z",
+        "payment_status": "Pending",
+        "created_at": "2023-09-24T15:31:30.214Z",
+        "updated_at": "2023-09-25T09:44:01.227Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "bc7f7aa9-ddf4-4168-96aa-3da8a8876e6b"
+      },
+      {
+        "id": "d511bc19-9367-4f12-b219-86c2ee2127fd",
+        "amount": 150,
+        "payment_date": "2023-09-24T22:00:05.087Z",
+        "payment_status": "Completed",
+        "created_at": "2023-09-25T01:18:37.014Z",
+        "updated_at": "2023-09-25T02:29:39.559Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "5e32419f-ff2f-415c-94db-e6eb26ea2f6f"
+      },
+      {
+        "id": "be74ef3e-ab47-4827-a6a7-213db16d4e61",
+        "amount": 88504,
+        "payment_date": "2023-09-25T10:10:03.451Z",
+        "payment_status": "Failed",
+        "created_at": "2023-09-24T16:05:28.690Z",
+        "updated_at": "2023-09-25T15:08:41.440Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "bc7f7aa9-ddf4-4168-96aa-3da8a8876e6b"
+      },
+      {
+        "id": "eac2cbfd-1221-4cac-a4b1-301c28dc2124",
+        "amount": 85248,
+        "payment_date": "2023-09-24T16:53:59.311Z",
+        "payment_status": "Refunded",
+        "created_at": "2023-09-25T08:04:28.704Z",
+        "updated_at": "2023-09-25T02:02:02.858Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "14040a20-6f66-416b-a7c7-0d7c49f6c923"
+      },
+      {
+        "id": "92dc3c15-d023-455e-afe1-fc020173cccd",
+        "amount": 10278,
+        "payment_date": "2023-09-25T07:11:42.963Z",
+        "payment_status": "Cancelled",
+        "created_at": "2023-09-24T23:26:51.189Z",
+        "updated_at": "2023-09-25T10:22:40.204Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "14040a20-6f66-416b-a7c7-0d7c49f6c923"
+      }
+    ],
+    "finance": [
+      {
+        "id": "f1656aa4-fd8c-423a-8b50-18ab617bdfba",
+        "budget": 67276,
+        "expense": 79220,
+        "income": 16691,
+        "profit": 37604,
+        "created_at": "2023-09-25T09:52:38.030Z",
+        "updated_at": "2023-09-25T07:59:47.052Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "b39516a1-4270-4f8f-a432-beeb53edd20f",
+        "budget": 28948,
+        "expense": 24023,
+        "income": 59091,
+        "profit": 31759,
+        "created_at": "2023-09-25T09:12:55.659Z",
+        "updated_at": "2023-09-25T09:43:48.116Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "eb86a1a2-ad92-410c-b7f6-13e3d510008f",
+        "budget": 31978,
+        "expense": 64595,
+        "income": 50672,
+        "profit": 40977,
+        "created_at": "2023-09-25T06:33:20.025Z",
+        "updated_at": "2023-09-25T05:37:49.816Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "c60d2712-f02a-4622-a029-5258fac8e29e",
+        "budget": 66843,
+        "expense": 61845,
+        "income": 63881,
+        "profit": 53866,
+        "created_at": "2023-09-25T11:47:42.601Z",
+        "updated_at": "2023-09-24T22:20:22.531Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "66f4bcb7-7379-4aec-bb94-fb32d9250f3c",
+        "budget": 14805,
+        "expense": 49582,
+        "income": 12562,
+        "profit": 69791,
+        "created_at": "2023-09-25T09:53:38.460Z",
+        "updated_at": "2023-09-25T12:40:35.602Z",
+        "business_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "05f7fa75-2103-4d58-a4dd-99608eec79a2",
+        "email": "Aileen_Padberg@roq.tech",
+        "firstName": "Jackson",
+        "lastName": "Stark",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1557220",
+        "tenantId": null
+      },
+      {
+        "reference": "54299296-cbd5-408b-a6b7-153b2f73b057",
+        "email": "Loyal_Gulgowski10@roq.tech",
+        "firstName": "Abelardo",
+        "lastName": "Willms",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/87068645",
+        "tenantId": null
+      },
+      {
+        "reference": "2419895d-2be1-4b38-a8f3-d6525faf8817",
+        "email": "Dorothea98@roq.tech",
+        "firstName": "Mayra",
+        "lastName": "Aufderhar",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/25584094",
+        "tenantId": null
+      },
+      {
+        "reference": "48156601-3d8c-42f0-9c38-3048236c777f",
+        "email": "Mac.Block9@roq.tech",
+        "firstName": "Camille",
+        "lastName": "Brown",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/95360538",
+        "tenantId": null
+      },
+      {
+        "reference": "9c4ffb86-eb00-4333-89de-796ae40d66b4",
+        "email": "Millie_Kohler21@roq.tech",
+        "firstName": "Viviane",
+        "lastName": "Leannon",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/453.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "vendor": [
+      {
+        "id": "e1b82dbe-9394-466c-917c-1e40abb4294c",
+        "name": "ABC Electronics",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "info@abcelectronics.com",
+        "created_at": "2023-09-25T09:35:16.369Z",
+        "updated_at": "2023-09-24T21:29:01.976Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "8c48a195-6d91-4156-a102-48cf97555a17",
+        "name": "XYZ Furniture",
+        "address": "456 Elm St",
+        "phone": "987-654-3210",
+        "email": "sales@xyzfurniture.com",
+        "created_at": "2023-09-25T09:46:32.882Z",
+        "updated_at": "2023-09-25T01:49:26.863Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5db82914-8cca-4c3f-ab6f-58fae7f7d913",
+        "name": "PQR Clothing",
+        "address": "789 Oak St",
+        "phone": "555-123-4567",
+        "email": "support@pqrclothing.com",
+        "created_at": "2023-09-24T18:17:46.057Z",
+        "updated_at": "2023-09-25T05:25:30.492Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e0b1e3be-97f5-4146-a088-2c31b4a89ee8",
+        "name": "LMN Appliances",
+        "address": "321 Maple St",
+        "phone": "888-999-0000",
+        "email": "info@lmnappliances.com",
+        "created_at": "2023-09-25T10:52:16.853Z",
+        "updated_at": "2023-09-25T11:25:15.096Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "705851d9-0181-4118-924b-26be735ca67a",
+        "name": "DEF Accessories",
+        "address": "654 Pine St",
+        "phone": "111-222-3333",
+        "email": "sales@defaccessories.com",
+        "created_at": "2023-09-25T07:58:18.485Z",
+        "updated_at": "2023-09-25T13:01:44.888Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "customer": [
+      {
+        "id": "878478c7-d5d1-4f97-9b18-8ef9aa7cadb9",
+        "name": "John Doe",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "john.doe@example.com",
+        "created_at": "2023-09-25T07:43:22.492Z",
+        "updated_at": "2023-09-25T03:55:15.009Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "123fad80-48ce-43fa-8f6d-2d9674af72a3",
+        "name": "Jane Smith",
+        "address": "456 Elm St",
+        "phone": "987-654-3210",
+        "email": "jane.smith@example.com",
+        "created_at": "2023-09-25T01:29:46.636Z",
+        "updated_at": "2023-09-25T08:39:22.853Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a13b9471-b2be-4753-9f0d-15b87d826146",
+        "name": "Michael Brown",
+        "address": "789 Oak St",
+        "phone": "555-123-4567",
+        "email": "michael.brown@example.com",
+        "created_at": "2023-09-24T20:48:07.825Z",
+        "updated_at": "2023-09-24T21:29:55.416Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "427c89bb-9276-4881-91cf-9ab016aca8d0",
+        "name": "Sarah Jones",
+        "address": "321 Maple St",
+        "phone": "888-999-0000",
+        "email": "sarah.jones@example.com",
+        "created_at": "2023-09-24T20:35:36.221Z",
+        "updated_at": "2023-09-25T03:52:14.452Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "3ef821a4-53a3-46f4-a311-00c6b5efd6e9",
+        "name": "David Wilson",
+        "address": "654 Pine St",
+        "phone": "111-222-3333",
+        "email": "david.wilson@example.com",
+        "created_at": "2023-09-24T23:32:46.993Z",
+        "updated_at": "2023-09-24T16:16:45.158Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "payment": [
+      {
+        "id": "ca110541-b15d-463b-bb41-82ab08689c96",
+        "amount": 9756,
+        "payment_date": "2023-09-24T19:08:27.172Z",
+        "payment_status": "Pending",
+        "created_at": "2023-09-25T01:48:22.408Z",
+        "updated_at": "2023-09-25T13:00:09.165Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "123fad80-48ce-43fa-8f6d-2d9674af72a3"
+      },
+      {
+        "id": "f36b9362-6cad-4295-842e-a641091d0173",
+        "amount": 57950,
+        "payment_date": "2023-09-25T05:14:48.481Z",
+        "payment_status": "Paid",
+        "created_at": "2023-09-25T04:56:16.113Z",
+        "updated_at": "2023-09-25T01:24:11.465Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "3ef821a4-53a3-46f4-a311-00c6b5efd6e9"
+      },
+      {
+        "id": "b7a5c09a-51cf-484c-8bfd-8a92de189ab8",
+        "amount": 56702,
+        "payment_date": "2023-09-25T11:58:48.055Z",
+        "payment_status": "Failed",
+        "created_at": "2023-09-25T05:57:46.122Z",
+        "updated_at": "2023-09-25T15:05:50.863Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "427c89bb-9276-4881-91cf-9ab016aca8d0"
+      },
+      {
+        "id": "283d20f3-dae0-437f-8b1c-e1d9953e3241",
+        "amount": 92511,
+        "payment_date": "2023-09-25T01:10:34.140Z",
+        "payment_status": "Refunded",
+        "created_at": "2023-09-25T02:21:01.551Z",
+        "updated_at": "2023-09-25T14:10:50.622Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "a13b9471-b2be-4753-9f0d-15b87d826146"
+      },
+      {
+        "id": "e4ceac7a-edab-48cc-9548-db7e3a4c20af",
+        "amount": 60696,
+        "payment_date": "2023-09-24T17:39:26.549Z",
+        "payment_status": "Cancelled",
+        "created_at": "2023-09-24T23:01:14.364Z",
+        "updated_at": "2023-09-25T06:57:28.019Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "a13b9471-b2be-4753-9f0d-15b87d826146"
+      }
+    ],
+    "finance": [
+      {
+        "id": "9ef30cd7-222b-46e2-b0ed-93b72a41657c",
+        "budget": 58560,
+        "expense": 22902,
+        "income": 89121,
+        "profit": 58933,
+        "created_at": "2023-09-24T18:09:11.574Z",
+        "updated_at": "2023-09-25T08:27:42.712Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "88aa90c8-c850-47cc-a5a9-d7c665790741",
+        "budget": 64068,
+        "expense": 93393,
+        "income": 88145,
+        "profit": 6425,
+        "created_at": "2023-09-25T15:08:42.801Z",
+        "updated_at": "2023-09-24T19:51:23.992Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "3ef9314c-abd7-45e1-ba09-3877a97398f8",
+        "budget": 69877,
+        "expense": 1336,
+        "income": 20784,
+        "profit": 8289,
+        "created_at": "2023-09-24T18:00:19.510Z",
+        "updated_at": "2023-09-25T03:22:48.749Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "6628fb6a-9f3a-45a0-a707-71f934a5b9e4",
+        "budget": 56979,
+        "expense": 18452,
+        "income": 16790,
+        "profit": 5919,
+        "created_at": "2023-09-24T17:20:06.381Z",
+        "updated_at": "2023-09-25T11:08:49.229Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "3cc67882-a386-43e7-8b04-ee5366437c61",
+        "budget": 35601,
+        "expense": 89698,
+        "income": 52554,
+        "profit": 9409,
+        "created_at": "2023-09-25T11:09:25.232Z",
+        "updated_at": "2023-09-24T16:27:47.781Z",
+        "business_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "ce578b92-af76-4144-990e-0fc650562cd3",
+        "email": "Rey57@roq.tech",
+        "firstName": "Aliza",
+        "lastName": "Keebler",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1221.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "917259d8-3b95-4df3-8b41-7b5303571109",
+        "email": "Shawn.Mitchell@roq.tech",
+        "firstName": "Francesco",
+        "lastName": "Collins-Wiegand",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/508.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "a99cc045-a231-48be-9ab5-495edb942ddf",
+        "email": "Columbus27@roq.tech",
+        "firstName": "Myrl",
+        "lastName": "Effertz-Schamberger",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/905.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "d6e56061-ecd2-4def-b33a-0cab9f5734dd",
+        "email": "Dandre.Little@roq.tech",
+        "firstName": "Modesto",
+        "lastName": "Harber",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/97297332",
+        "tenantId": null
+      },
+      {
+        "reference": "b4a69dfb-eeae-4bb8-a994-67818b6d0e05",
+        "email": "Betsy13@roq.tech",
+        "firstName": "Kariane",
+        "lastName": "DuBuque",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/779.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "vendor": [
+      {
+        "id": "88b5a4f9-76b7-4ff6-95e3-d9f9e3bb7347",
+        "name": "ABC Electronics",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "info@abcelectronics.com",
+        "created_at": "2023-09-25T11:26:40.848Z",
+        "updated_at": "2023-09-24T19:50:17.599Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "269158eb-8e63-494e-acf4-8f45b8066f89",
+        "name": "XYZ Corporation",
+        "address": "456 Elm St",
+        "phone": "987-654-3210",
+        "email": "sales@xyzcorp.com",
+        "created_at": "2023-09-25T09:49:51.934Z",
+        "updated_at": "2023-09-24T17:24:35.426Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "3c5521d0-1ec6-4c24-9e01-daac2c983711",
+        "name": "MNO Enterprises",
+        "address": "789 Oak St",
+        "phone": "555-123-4567",
+        "email": "support@mnoenterprises.com",
+        "created_at": "2023-09-24T16:01:43.912Z",
+        "updated_at": "2023-09-25T10:45:25.910Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b8dba7d8-2d5c-46a8-bb43-325a02125860",
+        "name": "PQR Industries",
+        "address": "321 Maple Ave",
+        "phone": "777-888-9999",
+        "email": "info@pqrindustries.com",
+        "created_at": "2023-09-25T02:24:22.761Z",
+        "updated_at": "2023-09-25T04:26:29.399Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "fb705523-c293-4773-9966-1fa800fa9fd9",
+        "name": "LMN Co.",
+        "address": "654 Pine St",
+        "phone": "444-555-6666",
+        "email": "sales@lmnco.com",
+        "created_at": "2023-09-25T00:31:12.788Z",
+        "updated_at": "2023-09-24T19:14:05.100Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "customer": [
+      {
+        "id": "ec3b1a3a-5ac6-4bf2-8200-d3d05964df2a",
+        "name": "John Doe",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "john.doe@example.com",
+        "created_at": "2023-09-25T09:46:15.771Z",
+        "updated_at": "2023-09-25T01:24:10.467Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "96efc485-0884-4946-9c17-1395ff7ef004",
+        "name": "Jane Smith",
+        "address": "456 Elm St",
+        "phone": "987-654-3210",
+        "email": "jane.smith@example.com",
+        "created_at": "2023-09-25T14:19:16.829Z",
+        "updated_at": "2023-09-24T18:48:42.674Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "11bf53d6-c292-4a11-b827-22f87afc3987",
+        "name": "Michael Brown",
+        "address": "789 Oak St",
+        "phone": "555-123-4567",
+        "email": "michael.brown@example.com",
+        "created_at": "2023-09-25T06:21:47.488Z",
+        "updated_at": "2023-09-25T12:45:02.045Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "4026bf8d-8d8b-4e7b-8b84-3744302331fa",
+        "name": "Sarah Jones",
+        "address": "321 Maple Ave",
+        "phone": "777-888-9999",
+        "email": "sarah.jones@example.com",
+        "created_at": "2023-09-25T01:25:47.019Z",
+        "updated_at": "2023-09-25T14:52:43.760Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "bb31e4ec-8ac9-4301-b6d2-78c10fdda636",
+        "name": "Robert Wilson",
+        "address": "654 Pine St",
+        "phone": "444-555-6666",
+        "email": "robert.wilson@example.com",
+        "created_at": "2023-09-25T15:04:23.548Z",
+        "updated_at": "2023-09-24T22:05:24.106Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "payment": [
+      {
+        "id": "ffbe3959-c141-440a-bcd0-5685b46a4716",
+        "amount": 78470,
+        "payment_date": "2023-09-24T17:29:04.004Z",
+        "payment_status": "Pending",
+        "created_at": "2023-09-25T01:12:16.581Z",
+        "updated_at": "2023-09-24T15:10:34.645Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "11bf53d6-c292-4a11-b827-22f87afc3987"
+      },
+      {
+        "id": "35144945-2a40-4fe8-b530-d97f82903de3",
+        "amount": 70753,
+        "payment_date": "2023-09-25T05:15:23.263Z",
+        "payment_status": "Completed",
+        "created_at": "2023-09-25T07:38:17.084Z",
+        "updated_at": "2023-09-25T09:33:15.988Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "4026bf8d-8d8b-4e7b-8b84-3744302331fa"
+      },
+      {
+        "id": "d0dd649a-eff7-483c-9690-eea39ac78d0c",
+        "amount": 94090,
+        "payment_date": "2023-09-24T22:22:13.960Z",
+        "payment_status": "Failed",
+        "created_at": "2023-09-25T07:39:40.767Z",
+        "updated_at": "2023-09-24T20:22:31.971Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "11bf53d6-c292-4a11-b827-22f87afc3987"
+      },
+      {
+        "id": "bc4f78bc-6079-4dd7-9b3c-57d86b5a478f",
+        "amount": 54464,
+        "payment_date": "2023-09-24T18:58:34.972Z",
+        "payment_status": "Refunded",
+        "created_at": "2023-09-25T12:29:30.777Z",
+        "updated_at": "2023-09-24T15:38:41.004Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "96efc485-0884-4946-9c17-1395ff7ef004"
+      },
+      {
+        "id": "8014ca7b-03b2-4b74-b227-ce4a00976341",
+        "amount": 5339,
+        "payment_date": "2023-09-25T01:20:56.798Z",
+        "payment_status": "Cancelled",
+        "created_at": "2023-09-25T06:00:36.985Z",
+        "updated_at": "2023-09-25T15:01:13.902Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "11bf53d6-c292-4a11-b827-22f87afc3987"
+      }
+    ],
+    "finance": [
+      {
+        "id": "b1691fc5-a241-4807-b5fc-79ce9b17021f",
+        "budget": 2599,
+        "expense": 76170,
+        "income": 65108,
+        "profit": 25723,
+        "created_at": "2023-09-25T13:39:34.577Z",
+        "updated_at": "2023-09-25T12:49:37.118Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "98514232-11e8-4eb7-9d6f-070e571535cd",
+        "budget": 92492,
+        "expense": 10269,
+        "income": 9686,
+        "profit": 72575,
+        "created_at": "2023-09-25T08:47:56.241Z",
+        "updated_at": "2023-09-25T04:33:54.557Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "6e2b2940-4d10-493f-8d5a-cf379a4ed14a",
+        "budget": 41649,
+        "expense": 93194,
+        "income": 42825,
+        "profit": 48866,
+        "created_at": "2023-09-25T00:22:54.971Z",
+        "updated_at": "2023-09-25T05:31:45.388Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "d3d941eb-091d-4700-b4fb-20292ee7d45c",
+        "budget": 49043,
+        "expense": 1625,
+        "income": 13316,
+        "profit": 14867,
+        "created_at": "2023-09-25T14:45:05.862Z",
+        "updated_at": "2023-09-25T04:09:57.852Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "dd74a93a-6eda-4261-9f04-26074bf79ba9",
+        "budget": 66473,
+        "expense": 32697,
+        "income": 70816,
+        "profit": 6249,
+        "created_at": "2023-09-25T14:31:06.497Z",
+        "updated_at": "2023-09-25T14:13:44.210Z",
+        "business_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "a43d9868-d734-4b58-a65a-d807550f3a95",
+        "email": "Percy63@roq.tech",
+        "firstName": "Carmine",
+        "lastName": "McKenzie-Russel",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/90983001",
+        "tenantId": null
+      },
+      {
+        "reference": "f7112e7f-1aff-413d-946f-a73d376885ed",
+        "email": "Ike_Prohaska69@roq.tech",
+        "firstName": "Zachery",
+        "lastName": "Jenkins",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/703.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "4793483c-615e-4aef-a0ce-c98e6320fd0c",
+        "email": "Cathryn99@roq.tech",
+        "firstName": "Alf",
+        "lastName": "Bergnaum",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/46689993",
+        "tenantId": null
+      },
+      {
+        "reference": "81ea12e1-83ad-4463-b8ae-82a09df66f82",
+        "email": "Jakob88@roq.tech",
+        "firstName": "Marlen",
+        "lastName": "Carroll",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1007.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "ce090d22-db9a-4b0b-861d-524bbba865f9",
+        "email": "Valentin.Christiansen@roq.tech",
+        "firstName": "Gerard",
+        "lastName": "Fisher",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/355.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "vendor": [
+      {
+        "id": "c5b06ae3-50ee-4588-939a-4c2c5b8f4888",
+        "name": "ABC Electronics",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "info@abcelectronics.com",
+        "created_at": "2023-09-25T05:11:56.083Z",
+        "updated_at": "2023-09-25T10:32:50.134Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "826d95e0-f9c4-41c8-9f22-f2d8b462fa43",
+        "name": "XYZ Supplies",
+        "address": "456 Elm St",
+        "phone": "987-654-3210",
+        "email": "sales@xyzsupplies.com",
+        "created_at": "2023-09-25T05:22:32.421Z",
+        "updated_at": "2023-09-24T20:12:51.739Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "14b49abc-1865-4a9f-9dc5-6c46acfa8fd0",
+        "name": "Global Imports",
+        "address": "789 Oak St",
+        "phone": "555-123-4567",
+        "email": "info@globalimports.com",
+        "created_at": "2023-09-24T18:45:52.947Z",
+        "updated_at": "2023-09-24T15:48:37.636Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "6307f740-b3c1-4464-94b9-33ae51868b0e",
+        "name": "Sunrise Trading",
+        "address": "321 Pine St",
+        "phone": "888-999-0000",
+        "email": "sales@sunrisetrading.com",
+        "created_at": "2023-09-25T01:15:45.852Z",
+        "updated_at": "2023-09-24T22:59:57.868Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b17bc77d-8734-40e6-ba3a-116d4a80aec9",
+        "name": "Oceanic Enterprises",
+        "address": "654 Maple St",
+        "phone": "444-555-6666",
+        "email": "info@oceanicenterprises.com",
+        "created_at": "2023-09-24T16:39:07.145Z",
+        "updated_at": "2023-09-24T16:12:46.378Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "customer": [
+      {
+        "id": "96acd058-7ed2-4352-9cc9-651f78895be3",
+        "name": "John Doe",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "john.doe@example.com",
+        "created_at": "2023-09-25T00:02:57.033Z",
+        "updated_at": "2023-09-24T19:14:29.904Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "72684f39-e582-4b76-9c14-7d0efd32ec53",
+        "name": "Jane Smith",
+        "address": "456 Elm St",
+        "phone": "987-654-3210",
+        "email": "jane.smith@example.com",
+        "created_at": "2023-09-24T18:21:31.920Z",
+        "updated_at": "2023-09-25T06:19:50.736Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "76fedb23-a031-4918-9e2b-27e04675e47d",
+        "name": "Michael Brown",
+        "address": "789 Oak St",
+        "phone": "555-123-4567",
+        "email": "michael.brown@example.com",
+        "created_at": "2023-09-25T14:33:10.033Z",
+        "updated_at": "2023-09-25T06:44:31.557Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "0228ee17-4383-458c-967a-24287bb3288b",
+        "name": "Sarah Jones",
+        "address": "321 Pine St",
+        "phone": "888-999-0000",
+        "email": "sarah.jones@example.com",
+        "created_at": "2023-09-25T12:44:20.233Z",
+        "updated_at": "2023-09-25T03:13:49.148Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "0de98c0d-8550-4f99-af21-ce8a576f779a",
+        "name": "David Wilson",
+        "address": "654 Maple St",
+        "phone": "444-555-6666",
+        "email": "david.wilson@example.com",
+        "created_at": "2023-09-25T08:02:15.576Z",
+        "updated_at": "2023-09-25T02:11:17.705Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "payment": [
+      {
+        "id": "1f36056b-bbb6-47ef-b48d-9737dd370ee1",
+        "amount": 64831,
+        "payment_date": "2023-09-24T17:47:30.546Z",
+        "payment_status": "Pending",
+        "created_at": "2023-09-24T22:15:41.581Z",
+        "updated_at": "2023-09-24T19:49:05.401Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "0228ee17-4383-458c-967a-24287bb3288b"
+      },
+      {
+        "id": "6fbd0ab5-b1ee-426c-9b31-b3f44000b756",
+        "amount": 60350,
+        "payment_date": "2023-09-25T08:20:17.808Z",
+        "payment_status": "Completed",
+        "created_at": "2023-09-25T08:56:49.105Z",
+        "updated_at": "2023-09-25T13:11:19.822Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "76fedb23-a031-4918-9e2b-27e04675e47d"
+      },
+      {
+        "id": "febd1ddb-af77-4f50-a1e3-fbfd5bd7e052",
+        "amount": 96530,
+        "payment_date": "2023-09-25T05:12:53.053Z",
+        "payment_status": "Failed",
+        "created_at": "2023-09-24T15:30:56.951Z",
+        "updated_at": "2023-09-25T05:46:59.126Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "0de98c0d-8550-4f99-af21-ce8a576f779a"
+      },
+      {
+        "id": "f942a963-9533-4c04-b541-787374982adb",
+        "amount": 79608,
+        "payment_date": "2023-09-25T02:36:30.814Z",
+        "payment_status": "Refunded",
+        "created_at": "2023-09-24T15:16:05.943Z",
+        "updated_at": "2023-09-25T09:18:05.826Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "96acd058-7ed2-4352-9cc9-651f78895be3"
+      },
+      {
+        "id": "cf4c5d54-f139-46a7-90d7-25abd253aea4",
+        "amount": 93011,
+        "payment_date": "2023-09-25T05:10:05.510Z",
+        "payment_status": "Cancelled",
+        "created_at": "2023-09-25T12:38:42.345Z",
+        "updated_at": "2023-09-25T02:36:16.711Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "0de98c0d-8550-4f99-af21-ce8a576f779a"
+      }
+    ],
+    "finance": [
+      {
+        "id": "ec6fb233-7a50-42de-8584-e28a567f66e7",
+        "budget": 71010,
+        "expense": 37321,
+        "income": 14232,
+        "profit": 69424,
+        "created_at": "2023-09-25T12:30:19.688Z",
+        "updated_at": "2023-09-24T22:54:23.276Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "abfd2732-be1c-4893-9aec-0766237ea36c",
+        "budget": 9783,
+        "expense": 26171,
+        "income": 24983,
+        "profit": 58261,
+        "created_at": "2023-09-24T23:55:39.284Z",
+        "updated_at": "2023-09-25T01:56:52.711Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "b8fae329-f75b-4210-a43f-7c021ed385be",
+        "budget": 78731,
+        "expense": 89191,
+        "income": 84774,
+        "profit": 88430,
+        "created_at": "2023-09-25T13:45:54.408Z",
+        "updated_at": "2023-09-25T12:39:04.798Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "ffaf6392-3f4b-41a7-814b-6e3b3521a99f",
+        "budget": 11900,
+        "expense": 83183,
+        "income": 45580,
+        "profit": 14022,
+        "created_at": "2023-09-24T18:22:56.803Z",
+        "updated_at": "2023-09-24T18:18:01.878Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "7f3bfaec-d28a-4774-bcb6-092e855bf6ea",
+        "budget": 27129,
+        "expense": 37837,
+        "income": 94792,
+        "profit": 89289,
+        "created_at": "2023-09-25T01:22:04.917Z",
+        "updated_at": "2023-09-25T10:41:45.357Z",
+        "business_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "b1d6ddbe-b36e-416f-96a5-5c6987eb507a",
+        "email": "Kory.Watsica@roq.tech",
+        "firstName": "Mike",
+        "lastName": "Torp-Durgan",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67130790",
+        "tenantId": null
+      },
+      {
+        "reference": "105dfaaf-6a27-458e-a8ff-a94619a4051e",
+        "email": "Abbey_Kutch@roq.tech",
+        "firstName": "Lizzie",
+        "lastName": "Johns",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/707.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "fd6e0c6f-a958-4bbd-a4f4-35bfaf90225d",
+        "email": "Adela.Collins@roq.tech",
+        "firstName": "Watson",
+        "lastName": "Marvin",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/37421068",
+        "tenantId": null
+      },
+      {
+        "reference": "ad32b421-639c-4e64-bcdd-bbbe25a22b6c",
+        "email": "Makenna18@roq.tech",
+        "firstName": "Freida",
+        "lastName": "McClure-Powlowski",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/88612104",
+        "tenantId": null
+      },
+      {
+        "reference": "1f2a4b62-0b3c-49c2-a1bf-0c58911f6af7",
+        "email": "Jermey26@roq.tech",
+        "firstName": "Retha",
+        "lastName": "Treutel",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/230.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "vendor": [
+      {
+        "id": "54d575b0-11e2-40ed-b024-31ff538abc53",
+        "name": "ABC Electronics",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "info@abcelectronics.com",
+        "created_at": "2023-09-25T00:28:00.250Z",
+        "updated_at": "2023-09-24T21:15:21.745Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "6651e523-8fb1-471d-8360-9c6f5b28baba",
+        "name": "XYZ Supplies",
+        "address": "456 Elm St",
+        "phone": "987-654-3210",
+        "email": "sales@xyzsupplies.com",
+        "created_at": "2023-09-24T16:20:06.015Z",
+        "updated_at": "2023-09-24T21:51:45.856Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "74a51014-484d-4947-8ba3-a4bf8801ae10",
+        "name": "Global Imports",
+        "address": "789 Oak St",
+        "phone": "555-123-4567",
+        "email": "contact@globalimports.com",
+        "created_at": "2023-09-24T21:12:43.998Z",
+        "updated_at": "2023-09-24T16:34:43.938Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5dd420b7-7e17-4b11-8d48-fda622d87ef4",
+        "name": "Sunshine Retail",
+        "address": "321 Pine St",
+        "phone": "888-999-0000",
+        "email": "support@sunshineretail.com",
+        "created_at": "2023-09-24T16:51:10.083Z",
+        "updated_at": "2023-09-25T03:42:59.079Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e05ffc52-2fdc-4565-b997-df3c5212999c",
+        "name": "Moonlight Wholesale",
+        "address": "654 Maple St",
+        "phone": "111-222-3333",
+        "email": "info@moonlightwholesale.com",
+        "created_at": "2023-09-25T05:21:28.975Z",
+        "updated_at": "2023-09-25T12:39:18.881Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "customer": [
+      {
+        "id": "8b82f295-8f72-41f5-ba2e-13364a18d316",
+        "name": "John Doe",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "john.doe@example.com",
+        "created_at": "2023-09-25T04:46:58.126Z",
+        "updated_at": "2023-09-25T00:50:11.276Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "0ead539b-2944-4a7c-a87e-0c624a1176d9",
+        "name": "Jane Smith",
+        "address": "456 Elm St",
+        "phone": "987-654-3210",
+        "email": "jane.smith@example.com",
+        "created_at": "2023-09-25T14:59:01.560Z",
+        "updated_at": "2023-09-25T03:18:46.675Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b73d76aa-2609-43be-ade7-6956dbde388b",
+        "name": "Michael Brown",
+        "address": "789 Oak St",
+        "phone": "555-123-4567",
+        "email": "michael.brown@example.com",
+        "created_at": "2023-09-24T21:17:39.528Z",
+        "updated_at": "2023-09-24T19:51:43.752Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "27d6a5be-8e8b-4e97-b67e-6008d9e167a3",
+        "name": "Sarah Jones",
+        "address": "321 Pine St",
+        "phone": "888-999-0000",
+        "email": "sarah.jones@example.com",
+        "created_at": "2023-09-25T11:50:10.289Z",
+        "updated_at": "2023-09-25T09:27:55.322Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "6f4e694f-f395-4502-9a51-5966494f3f83",
+        "name": "Robert Wilson",
+        "address": "654 Maple St",
+        "phone": "111-222-3333",
+        "email": "robert.wilson@example.com",
+        "created_at": "2023-09-24T21:32:27.682Z",
+        "updated_at": "2023-09-25T11:47:56.489Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "payment": [
+      {
+        "id": "441aac79-9001-4b57-b215-b75c77368975",
+        "amount": 37616,
+        "payment_date": "2023-09-25T12:44:27.491Z",
+        "payment_status": "Paid",
+        "created_at": "2023-09-25T10:19:12.263Z",
+        "updated_at": "2023-09-25T08:15:11.965Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "8b82f295-8f72-41f5-ba2e-13364a18d316"
+      },
+      {
+        "id": "658be47d-86c4-475b-b523-351a9009e1ef",
+        "amount": 23124,
+        "payment_date": "2023-09-24T23:28:29.354Z",
+        "payment_status": "Pending",
+        "created_at": "2023-09-24T17:16:56.980Z",
+        "updated_at": "2023-09-25T11:44:06.417Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "8b82f295-8f72-41f5-ba2e-13364a18d316"
+      },
+      {
+        "id": "d0fb94e7-fe36-4e2c-a5d5-8abb0e733ae3",
+        "amount": 2517,
+        "payment_date": "2023-09-25T10:22:22.055Z",
+        "payment_status": "Cancelled",
+        "created_at": "2023-09-25T11:07:18.589Z",
+        "updated_at": "2023-09-24T16:26:25.889Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "0ead539b-2944-4a7c-a87e-0c624a1176d9"
+      },
+      {
+        "id": "7f581578-e4d1-402a-ab98-685c40c42aa2",
+        "amount": 48994,
+        "payment_date": "2023-09-24T23:54:29.254Z",
+        "payment_status": "Refunded",
+        "created_at": "2023-09-25T13:26:45.829Z",
+        "updated_at": "2023-09-24T22:03:47.803Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "b73d76aa-2609-43be-ade7-6956dbde388b"
+      },
+      {
+        "id": "2ae463a0-e0fe-4b9d-a9e1-d4ec9d1f7484",
+        "amount": 39213,
+        "payment_date": "2023-09-24T19:02:49.467Z",
+        "payment_status": "Failed",
+        "created_at": "2023-09-25T12:18:37.589Z",
+        "updated_at": "2023-09-25T09:45:14.960Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "27d6a5be-8e8b-4e97-b67e-6008d9e167a3"
+      }
+    ],
+    "finance": [
+      {
+        "id": "ca9381b4-d4a1-4ab7-a00e-4e6763741ba7",
+        "budget": 57064,
+        "expense": 85845,
+        "income": 62954,
+        "profit": 6091,
+        "created_at": "2023-09-24T22:59:50.674Z",
+        "updated_at": "2023-09-24T19:54:49.417Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "dc039042-fa09-4fd1-a343-72e2b463921f",
+        "budget": 77912,
+        "expense": 35088,
+        "income": 31570,
+        "profit": 28556,
+        "created_at": "2023-09-25T09:27:42.642Z",
+        "updated_at": "2023-09-24T21:13:12.893Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "a2b2ab6a-aa99-4a7d-b958-515c3fa190b8",
+        "budget": 52011,
+        "expense": 2948,
+        "income": 46673,
+        "profit": 56409,
+        "created_at": "2023-09-25T07:11:23.039Z",
+        "updated_at": "2023-09-24T16:38:03.213Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "245dfb8b-ae9b-42d9-98ff-0835f21a7767",
+        "budget": 75300,
+        "expense": 63863,
+        "income": 41396,
+        "profit": 17032,
+        "created_at": "2023-09-24T15:26:54.971Z",
+        "updated_at": "2023-09-25T00:36:52.075Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "68321ec2-71af-4508-be9a-fc95a118847f",
+        "budget": 24709,
+        "expense": 90498,
+        "income": 48580,
+        "profit": 96656,
+        "created_at": "2023-09-25T02:58:33.450Z",
+        "updated_at": "2023-09-24T23:00:32.146Z",
+        "business_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "9047b62d-da3c-43ed-8bfc-8a372fb8b6dc",
+        "email": "Aimee_Bednar@roq.tech",
+        "firstName": "Lilly",
+        "lastName": "Torphy",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1016.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "0e6481a8-28d7-4a5a-9b13-d8dfcbbd8b93",
+        "email": "Watson54@roq.tech",
+        "firstName": "Rowan",
+        "lastName": "Labadie",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/66427933",
+        "tenantId": null
+      },
+      {
+        "reference": "98bbb7b7-3f54-4f61-9bd0-deb11442e083",
+        "email": "Ola_Lang9@roq.tech",
+        "firstName": "Terrill",
+        "lastName": "Berge",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/15920391",
+        "tenantId": null
+      },
+      {
+        "reference": "87a81834-df40-402c-9921-8119404b77d6",
+        "email": "Leola9@roq.tech",
+        "firstName": "Bridget",
+        "lastName": "Harris",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/0.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "9b686c4c-baa7-49bf-ad5a-fe0ab94829da",
+        "email": "Jarrett.Fay@roq.tech",
+        "firstName": "Finn",
+        "lastName": "Orn",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/50673553",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "vendor": [
+      {
+        "id": "b5d1da54-121e-478a-9544-c89f312c3cd9",
+        "name": "ABC Company",
+        "address": "123 Main St",
+        "phone": "555-123-4567",
+        "email": "vendor1@example.com",
+        "created_at": "2023-09-24T17:35:14.498Z",
+        "updated_at": "2023-09-25T12:30:02.992Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e5284771-1190-44fd-a061-5220d34e589c",
+        "name": "XYZ Corporation",
+        "address": "456 Elm St",
+        "phone": "555-987-6543",
+        "email": "vendor2@example.com",
+        "created_at": "2023-09-25T05:59:32.808Z",
+        "updated_at": "2023-09-25T08:32:37.408Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "ea21c7b7-183e-4a03-8590-cfb107bc1889",
+        "name": "123 Enterprises",
+        "address": "789 Oak Ave",
+        "phone": "555-456-7890",
+        "email": "vendor3@example.com",
+        "created_at": "2023-09-25T05:59:44.593Z",
+        "updated_at": "2023-09-25T07:38:09.974Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "ac30702d-8c73-48e8-b214-c5f2b056ba3d",
+        "name": "Global Solutions",
+        "address": "555 Pine Rd",
+        "phone": "555-789-1234",
+        "email": "vendor4@example.com",
+        "created_at": "2023-09-25T14:01:26.576Z",
+        "updated_at": "2023-09-25T04:48:36.613Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "32f90629-5a4f-45f1-9762-382edb113944",
+        "name": "Best Products",
+        "address": "999 Maple Ln",
+        "phone": "555-321-6547",
+        "email": "vendor5@example.com",
+        "created_at": "2023-09-25T12:22:26.905Z",
+        "updated_at": "2023-09-25T04:13:04.352Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "customer": [
+      {
+        "id": "f0ce4c56-26bb-4ab3-9d09-3c705567209d",
+        "name": "John Smith",
+        "address": "123 Main St",
+        "phone": "555-123-4567",
+        "email": "customer1@example.com",
+        "created_at": "2023-09-25T05:17:21.926Z",
+        "updated_at": "2023-09-25T04:28:41.910Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b0eec15f-a448-49a3-888f-4bcb1a411ffc",
+        "name": "Jane Doe",
+        "address": "456 Elm St",
+        "phone": "555-987-6543",
+        "email": "customer2@example.com",
+        "created_at": "2023-09-25T01:38:42.457Z",
+        "updated_at": "2023-09-25T02:20:28.882Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "de28764d-ab8d-44ae-a543-af8262c5d60a",
+        "name": "Michael Brown",
+        "address": "789 Oak Ave",
+        "phone": "555-456-7890",
+        "email": "customer3@example.com",
+        "created_at": "2023-09-25T02:26:21.832Z",
+        "updated_at": "2023-09-25T12:30:58.079Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "7acb2a12-f094-4d35-81bb-fab13b303873",
+        "name": "Sarah Jones",
+        "address": "555 Pine Rd",
+        "phone": "555-789-1234",
+        "email": "customer4@example.com",
+        "created_at": "2023-09-25T12:36:17.267Z",
+        "updated_at": "2023-09-25T01:09:25.011Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "fce436c0-eb0d-4f5c-b27b-8246d0c34bbe",
+        "name": "Robert Wilson",
+        "address": "999 Maple Ln",
+        "phone": "555-321-6547",
+        "email": "customer5@example.com",
+        "created_at": "2023-09-24T15:47:50.126Z",
+        "updated_at": "2023-09-25T10:56:52.049Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "payment": [
+      {
+        "id": "653a83e8-13e3-44ca-a8de-4dd4ed181162",
+        "amount": 68018,
+        "payment_date": "2023-09-25T14:55:59.027Z",
+        "payment_status": "Pending",
+        "created_at": "2023-09-25T14:37:40.260Z",
+        "updated_at": "2023-09-24T21:27:32.145Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "fce436c0-eb0d-4f5c-b27b-8246d0c34bbe"
+      },
+      {
+        "id": "4fa20520-41dc-44ac-a0cd-7a64ccb5d021",
+        "amount": 19843,
+        "payment_date": "2023-09-24T15:17:48.176Z",
+        "payment_status": "Completed",
+        "created_at": "2023-09-25T02:06:35.346Z",
+        "updated_at": "2023-09-25T02:43:56.403Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "de28764d-ab8d-44ae-a543-af8262c5d60a"
+      },
+      {
+        "id": "85fbb648-9060-4450-a820-6595c257ae81",
+        "amount": 409,
+        "payment_date": "2023-09-24T20:52:01.724Z",
+        "payment_status": "Failed",
+        "created_at": "2023-09-24T17:52:35.788Z",
+        "updated_at": "2023-09-25T00:06:58.933Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "de28764d-ab8d-44ae-a543-af8262c5d60a"
+      },
+      {
+        "id": "a1e16c17-a119-419f-a9ce-4b7a77970a91",
+        "amount": 79791,
+        "payment_date": "2023-09-24T15:41:37.304Z",
+        "payment_status": "Refunded",
+        "created_at": "2023-09-24T19:15:47.291Z",
+        "updated_at": "2023-09-24T17:54:21.397Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "f0ce4c56-26bb-4ab3-9d09-3c705567209d"
+      },
+      {
+        "id": "ec171d7d-3668-41f7-99f9-432af763c2f7",
+        "amount": 79952,
+        "payment_date": "2023-09-24T19:01:19.063Z",
+        "payment_status": "Cancelled",
+        "created_at": "2023-09-25T05:41:35.784Z",
+        "updated_at": "2023-09-25T08:10:58.867Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "de28764d-ab8d-44ae-a543-af8262c5d60a"
+      }
+    ],
+    "finance": [
+      {
+        "id": "b8a92335-a726-430f-8453-ec50d54893cc",
+        "budget": 35462,
+        "expense": 39197,
+        "income": 93095,
+        "profit": 60389,
+        "created_at": "2023-09-25T06:21:44.187Z",
+        "updated_at": "2023-09-25T14:37:56.024Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "44093014-5dbe-4d56-a813-f74a869e9912",
+        "budget": 57642,
+        "expense": 40989,
+        "income": 9831,
+        "profit": 87973,
+        "created_at": "2023-09-25T02:53:39.036Z",
+        "updated_at": "2023-09-25T04:51:23.781Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "e2650a90-e660-4a42-9805-316bf35bd7a0",
+        "budget": 56802,
+        "expense": 229,
+        "income": 76623,
+        "profit": 43503,
+        "created_at": "2023-09-25T10:49:28.962Z",
+        "updated_at": "2023-09-24T20:28:41.562Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "69f13254-38b6-4f34-8ef2-4645d130ca84",
+        "budget": 29867,
+        "expense": 50946,
+        "income": 80434,
+        "profit": 94969,
+        "created_at": "2023-09-25T07:31:47.564Z",
+        "updated_at": "2023-09-25T03:52:01.894Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "ce40f3c9-44b2-4b0d-a0b5-772bcf28c115",
+        "budget": 54778,
+        "expense": 69191,
+        "income": 92844,
+        "profit": 21302,
+        "created_at": "2023-09-24T20:07:19.819Z",
+        "updated_at": "2023-09-24T19:09:23.297Z",
+        "business_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "03fbd5ad-0d5b-4cc1-a088-66fb9de09408",
+        "email": "Jacinthe8@roq.tech",
+        "firstName": "Madyson",
+        "lastName": "Stroman",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/491.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "db1e9cd1-6ad4-423e-8002-e38f44423fcb",
+        "email": "Constantin_Kerluke@roq.tech",
+        "firstName": "Jordyn",
+        "lastName": "Kulas",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/74584763",
+        "tenantId": null
+      },
+      {
+        "reference": "2b3919ec-84d1-48e1-8657-0f1466590bd8",
+        "email": "Lyla_Carter@roq.tech",
+        "firstName": "Zoie",
+        "lastName": "Rolfson",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1110.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "110963ac-5b28-4fc5-991a-f76901c0c9be",
+        "email": "Zella_Wuckert10@roq.tech",
+        "firstName": "Kaelyn",
+        "lastName": "Stokes",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/893.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "c94b3e3a-ad21-4a3c-95dc-077da5c0a472",
+        "email": "Cora.Wisozk41@roq.tech",
+        "firstName": "Jordyn",
+        "lastName": "Denesik",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/92384895",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "vendor": [
+      {
+        "id": "559fe12d-7aa1-41cb-8b2b-0855c21f2c35",
+        "name": "ABC Electronics",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "info@abcelectronics.com",
+        "created_at": "2023-09-25T14:02:19.592Z",
+        "updated_at": "2023-09-24T15:52:59.668Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "16fcdfdd-0c34-4ac0-b3fc-de48a64fd964",
+        "name": "XYZ Supplies",
+        "address": "456 Elm St",
+        "phone": "555-555-5555",
+        "email": "sales@xyzsupplies.com",
+        "created_at": "2023-09-25T07:57:39.043Z",
+        "updated_at": "2023-09-25T07:23:05.578Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "736a15b6-d681-45a9-9f2c-0ace7198c8c6",
+        "name": "123 Solutions",
+        "address": "789 Oak St",
+        "phone": "999-999-9999",
+        "email": "support@123solutions.com",
+        "created_at": "2023-09-24T20:26:06.374Z",
+        "updated_at": "2023-09-24T17:32:36.719Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e341ec83-de7b-4026-b58a-ef3d008d9387",
+        "name": "Best Buy",
+        "address": "321 Pine St",
+        "phone": "888-888-8888",
+        "email": "customerservice@bestbuy.com",
+        "created_at": "2023-09-25T05:28:13.398Z",
+        "updated_at": "2023-09-25T01:56:58.577Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "9c9650b9-74fc-430f-902e-c3403e61369b",
+        "name": "Tech World",
+        "address": "987 Maple St",
+        "phone": "777-777-7777",
+        "email": "techsupport@techworld.com",
+        "created_at": "2023-09-25T11:07:12.578Z",
+        "updated_at": "2023-09-25T13:33:09.051Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "customer": [
+      {
+        "id": "17ce8832-a03a-4f53-bf4e-92ffbd747c81",
+        "name": "John Doe",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "john.doe@example.com",
+        "created_at": "2023-09-25T11:40:21.094Z",
+        "updated_at": "2023-09-25T01:59:12.218Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "092394a5-f4b4-4785-ad19-86895cc16bee",
+        "name": "Jane Smith",
+        "address": "456 Elm St",
+        "phone": "555-555-5555",
+        "email": "jane.smith@example.com",
+        "created_at": "2023-09-24T17:06:53.026Z",
+        "updated_at": "2023-09-25T07:55:55.015Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "370d8579-26c6-4f61-8a33-dd5476622678",
+        "name": "Michael Johnson",
+        "address": "789 Oak St",
+        "phone": "999-999-9999",
+        "email": "michael.johnson@example.com",
+        "created_at": "2023-09-25T01:47:01.230Z",
+        "updated_at": "2023-09-25T11:42:03.438Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "8e6ba7ae-2327-4a40-ae99-c3c912bfd7e2",
+        "name": "Sarah Wilson",
+        "address": "321 Pine St",
+        "phone": "888-888-8888",
+        "email": "sarah.wilson@example.com",
+        "created_at": "2023-09-25T02:41:05.141Z",
+        "updated_at": "2023-09-24T18:29:24.199Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "fccf5f00-e821-492e-be69-ea33de2db0aa",
+        "name": "Robert Brown",
+        "address": "987 Maple St",
+        "phone": "777-777-7777",
+        "email": "robert.brown@example.com",
+        "created_at": "2023-09-24T22:22:26.814Z",
+        "updated_at": "2023-09-25T00:50:53.610Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "payment": [
+      {
+        "id": "7792857a-7323-4cb6-98f6-e88bdd290fff",
+        "amount": 99935,
+        "payment_date": "2023-09-24T23:17:43.917Z",
+        "payment_status": "Pending",
+        "created_at": "2023-09-24T16:18:06.543Z",
+        "updated_at": "2023-09-24T21:57:25.729Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "fccf5f00-e821-492e-be69-ea33de2db0aa"
+      },
+      {
+        "id": "8bd0d5f6-260c-428c-a3d5-64f5e1b8a642",
+        "amount": 6264,
+        "payment_date": "2023-09-25T13:32:03.172Z",
+        "payment_status": "Completed",
+        "created_at": "2023-09-25T02:32:17.279Z",
+        "updated_at": "2023-09-25T04:39:31.868Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "fccf5f00-e821-492e-be69-ea33de2db0aa"
+      },
+      {
+        "id": "7cefbcfd-702a-4ac7-9585-0732f1a74265",
+        "amount": 82726,
+        "payment_date": "2023-09-25T12:44:38.491Z",
+        "payment_status": "Failed",
+        "created_at": "2023-09-25T10:51:16.587Z",
+        "updated_at": "2023-09-25T11:12:12.995Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "17ce8832-a03a-4f53-bf4e-92ffbd747c81"
+      },
+      {
+        "id": "984fefc4-c3bc-4fd4-9cd9-9f3c7fe530bd",
+        "amount": 65011,
+        "payment_date": "2023-09-25T14:15:45.576Z",
+        "payment_status": "Refunded",
+        "created_at": "2023-09-24T15:48:57.412Z",
+        "updated_at": "2023-09-25T06:07:02.341Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "370d8579-26c6-4f61-8a33-dd5476622678"
+      },
+      {
+        "id": "c609cff2-abbf-4572-8c63-f6b5f37c7b3d",
+        "amount": 47411,
+        "payment_date": "2023-09-24T16:53:18.593Z",
+        "payment_status": "Cancelled",
+        "created_at": "2023-09-25T05:25:34.766Z",
+        "updated_at": "2023-09-24T16:34:20.956Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "8e6ba7ae-2327-4a40-ae99-c3c912bfd7e2"
+      }
+    ],
+    "finance": [
+      {
+        "id": "d225edc3-f306-47fb-b46a-45c7e4ca649a",
+        "budget": 38525,
+        "expense": 26911,
+        "income": 26680,
+        "profit": 37034,
+        "created_at": "2023-09-25T03:32:15.585Z",
+        "updated_at": "2023-09-25T13:03:28.129Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "2abb98f5-5ade-4710-a8ec-719cb2b172ba",
+        "budget": 31450,
+        "expense": 22705,
+        "income": 1412,
+        "profit": 33861,
+        "created_at": "2023-09-24T21:01:12.509Z",
+        "updated_at": "2023-09-24T20:29:14.065Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "198cc187-3cba-48a3-8674-bc500722931a",
+        "budget": 55949,
+        "expense": 37811,
+        "income": 88093,
+        "profit": 50472,
+        "created_at": "2023-09-24T19:20:39.342Z",
+        "updated_at": "2023-09-24T15:17:18.486Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "f79260fe-d53b-4713-b540-077d32562154",
+        "budget": 91467,
+        "expense": 44930,
+        "income": 26651,
+        "profit": 59176,
+        "created_at": "2023-09-24T22:18:09.057Z",
+        "updated_at": "2023-09-25T10:55:07.683Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "d3da59ac-135a-4dac-b150-bd499521247a",
+        "budget": 16421,
+        "expense": 78211,
+        "income": 23238,
+        "profit": 68633,
+        "created_at": "2023-09-24T21:25:47.409Z",
+        "updated_at": "2023-09-25T09:52:35.280Z",
+        "business_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "859c8864-47b7-42a2-b7aa-b9f560b86b70",
+        "email": "Cleveland.Stiedemann93@roq.tech",
+        "firstName": "Adah",
+        "lastName": "Little",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/697.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1bbe794b-ac0d-4906-a2ae-bd868515e6f3",
+        "email": "Janae.Jast90@roq.tech",
+        "firstName": "Yessenia",
+        "lastName": "Kuhlman",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/58651496",
+        "tenantId": null
+      },
+      {
+        "reference": "3a106b23-2938-40b2-999a-a428d38b349d",
+        "email": "Kendrick.Klocko@roq.tech",
+        "firstName": "Myah",
+        "lastName": "Glover",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/58688011",
+        "tenantId": null
+      },
+      {
+        "reference": "3aae86f2-fd2d-44c0-9e01-f515ff2b1327",
+        "email": "Marcelo77@roq.tech",
+        "firstName": "Torrey",
+        "lastName": "Marvin",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/60406590",
+        "tenantId": null
+      },
+      {
+        "reference": "7e259232-613e-44f3-93b3-bab1787ce455",
+        "email": "Dejuan86@roq.tech",
+        "firstName": "Ulises",
+        "lastName": "VonRueden",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/915.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "vendor": [
+      {
+        "id": "b77e246c-3540-4149-83ef-4d59fbabb095",
+        "name": "ABC Electronics",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "info@abcelectronics.com",
+        "created_at": "2023-09-24T17:52:58.225Z",
+        "updated_at": "2023-09-24T20:22:18.378Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "227b046b-fd90-476d-8c2d-9ed5290dbbca",
+        "name": "XYZ Furniture",
+        "address": "456 Elm St",
+        "phone": "987-654-3210",
+        "email": "sales@xyzfurniture.com",
+        "created_at": "2023-09-25T05:31:43.800Z",
+        "updated_at": "2023-09-24T21:43:40.576Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "ef24c36f-6e4f-4a82-849e-ac56bc520aba",
+        "name": "123 Clothing",
+        "address": "789 Oak St",
+        "phone": "555-123-4567",
+        "email": "contact@123clothing.com",
+        "created_at": "2023-09-25T03:42:51.855Z",
+        "updated_at": "2023-09-25T06:18:49.871Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e5e03c61-8824-4eac-8b33-dde772bc6735",
+        "name": "Best Buy",
+        "address": "321 Maple Ave",
+        "phone": "888-999-0000",
+        "email": "support@bestbuy.com",
+        "created_at": "2023-09-24T15:56:59.611Z",
+        "updated_at": "2023-09-25T10:06:39.401Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "d143dd4e-955b-479e-9b9e-3bf2d33d3c25",
+        "name": "Gourmet Foods",
+        "address": "654 Pine St",
+        "phone": "111-222-3333",
+        "email": "info@gourmetfoods.com",
+        "created_at": "2023-09-24T22:02:37.317Z",
+        "updated_at": "2023-09-24T18:28:52.408Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "customer": [
+      {
+        "id": "165f1cd2-40dc-4a78-a871-24c3620745b4",
+        "name": "John Doe",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "john.doe@example.com",
+        "created_at": "2023-09-25T07:44:09.381Z",
+        "updated_at": "2023-09-25T05:59:11.695Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "559c5262-6284-48fa-9dee-59f62982729d",
+        "name": "Jane Smith",
+        "address": "456 Elm St",
+        "phone": "987-654-3210",
+        "email": "jane.smith@example.com",
+        "created_at": "2023-09-24T17:26:25.828Z",
+        "updated_at": "2023-09-24T20:19:59.671Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "aa410e31-d71b-48fa-8ae3-1aad956f4869",
+        "name": "Michael Brown",
+        "address": "789 Oak St",
+        "phone": "555-123-4567",
+        "email": "michael.brown@example.com",
+        "created_at": "2023-09-24T22:09:20.348Z",
+        "updated_at": "2023-09-25T09:57:17.177Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e9eb77da-01e2-4582-8ee1-a6e56f204bf3",
+        "name": "Sarah Jones",
+        "address": "321 Maple Ave",
+        "phone": "888-999-0000",
+        "email": "sarah.jones@example.com",
+        "created_at": "2023-09-24T18:40:09.067Z",
+        "updated_at": "2023-09-25T07:27:43.120Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a8b8ef7d-bbf2-4089-be17-812b26dee724",
+        "name": "David Wilson",
+        "address": "654 Pine St",
+        "phone": "111-222-3333",
+        "email": "david.wilson@example.com",
+        "created_at": "2023-09-25T09:28:55.294Z",
+        "updated_at": "2023-09-25T00:17:00.602Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "payment": [
+      {
+        "id": "2a3fb8e7-9a5e-4261-850a-3169783d2c9f",
+        "amount": 18383,
+        "payment_date": "2023-09-24T16:46:16.750Z",
+        "payment_status": "Paid",
+        "created_at": "2023-09-25T13:19:51.298Z",
+        "updated_at": "2023-09-25T01:03:39.474Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "aa410e31-d71b-48fa-8ae3-1aad956f4869"
+      },
+      {
+        "id": "ca12a005-a0a7-4d67-a570-29ce4cee4cb4",
+        "amount": 76354,
+        "payment_date": "2023-09-24T23:07:06.512Z",
+        "payment_status": "Pending",
+        "created_at": "2023-09-24T15:16:15.519Z",
+        "updated_at": "2023-09-25T01:29:38.828Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "aa410e31-d71b-48fa-8ae3-1aad956f4869"
+      },
+      {
+        "id": "379f809e-e31e-43e8-84f1-829fc89b9ce3",
+        "amount": 31245,
+        "payment_date": "2023-09-25T06:33:42.229Z",
+        "payment_status": "Cancelled",
+        "created_at": "2023-09-25T04:43:44.659Z",
+        "updated_at": "2023-09-25T05:29:25.038Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "165f1cd2-40dc-4a78-a871-24c3620745b4"
+      },
+      {
+        "id": "5bebb2b5-03a2-4787-8c38-7116f9e257b0",
+        "amount": 25377,
+        "payment_date": "2023-09-24T17:40:02.933Z",
+        "payment_status": "Refunded",
+        "created_at": "2023-09-25T09:51:44.793Z",
+        "updated_at": "2023-09-24T20:15:05.442Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "559c5262-6284-48fa-9dee-59f62982729d"
+      },
+      {
+        "id": "43be9bbf-a467-475d-bbf9-4146a2e4a585",
+        "amount": 59638,
+        "payment_date": "2023-09-24T17:06:44.638Z",
+        "payment_status": "Processing",
+        "created_at": "2023-09-24T20:03:02.333Z",
+        "updated_at": "2023-09-25T09:51:27.587Z",
+        "business_id": "main_entity_pk",
+        "customer_id": "165f1cd2-40dc-4a78-a871-24c3620745b4"
+      }
+    ],
+    "finance": [
+      {
+        "id": "46c661d0-636f-4a55-897d-0108bd8eb6f0",
+        "budget": 43204,
+        "expense": 18648,
+        "income": 43956,
+        "profit": 21844,
+        "created_at": "2023-09-24T21:47:08.510Z",
+        "updated_at": "2023-09-24T18:38:50.531Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "d4576f12-d32d-4f27-8dab-3f25160a53c8",
+        "budget": 51805,
+        "expense": 62456,
+        "income": 10408,
+        "profit": 67621,
+        "created_at": "2023-09-24T21:23:40.494Z",
+        "updated_at": "2023-09-24T22:41:42.024Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "0b4658ef-79fa-4360-8fd4-2d87f4108271",
+        "budget": 85514,
+        "expense": 62623,
+        "income": 71065,
+        "profit": 82530,
+        "created_at": "2023-09-24T16:25:57.367Z",
+        "updated_at": "2023-09-25T08:17:12.104Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "3e54e007-d853-47b8-928b-7d1c553fdd53",
+        "budget": 28187,
+        "expense": 78156,
+        "income": 43905,
+        "profit": 7490,
+        "created_at": "2023-09-25T08:56:04.333Z",
+        "updated_at": "2023-09-25T01:50:37.536Z",
+        "business_id": "main_entity_pk"
+      },
+      {
+        "id": "d7ca7370-f82b-45d0-beb7-0e4ed583fce7",
+        "budget": 96275,
+        "expense": 61851,
+        "income": 93152,
+        "profit": 38275,
+        "created_at": "2023-09-24T17:47:37.690Z",
+        "updated_at": "2023-09-25T14:28:10.713Z",
+        "business_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "48209e40-3d87-453a-9adb-6d0ed561b456",
+        "email": "Viviane69@roq.tech",
+        "firstName": "Jarrell",
+        "lastName": "Hills",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/832.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "4c1cf3bc-eef3-4527-9d2f-cbf74d4ad88b",
+        "email": "Cathryn41@roq.tech",
+        "firstName": "Delilah",
+        "lastName": "Beatty",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/425.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "43116bfc-d21d-43e8-8d30-ca2c48b87b48",
+        "email": "Susie_Sawayn@roq.tech",
+        "firstName": "Geo",
+        "lastName": "Beahan",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/13496829",
+        "tenantId": null
+      },
+      {
+        "reference": "1679a973-cb14-4b9f-97a6-c301d5a29473",
+        "email": "Aric_Robel45@roq.tech",
+        "firstName": "Kaci",
+        "lastName": "Beahan",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/98402338",
+        "tenantId": null
+      },
+      {
+        "reference": "a2148dcf-9d25-44be-a266-a6cc7c9458e4",
+        "email": "Jammie73@roq.tech",
+        "firstName": "Dulce",
+        "lastName": "Grimes",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/81313147",
+        "tenantId": null
+      }
+    ]
+  }
+]
